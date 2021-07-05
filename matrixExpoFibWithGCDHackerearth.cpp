@@ -26,7 +26,7 @@ void power(vector<vector<ll> > &A, int n)
 	power(A, n/2);
 	A = multiply(A, A);
 	if(n%2!=0) 
-    {
+        {
 		vector<vector<ll> > M {{0,1}, {1,1}};
 		A = multiply(A , M);
 	}
